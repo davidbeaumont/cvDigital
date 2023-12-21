@@ -10,8 +10,8 @@
     <?php
     include_once('elements.php'); 
     ?>
-    <div class="wrapperTailwind flex text-lg"><!-- wrapper de contenu tailwindcss -->
-        <main class="colonneGauche w-2/3 flex flex-col gap-5">
+    <div class="wrapperTailwind flex text-lg p-9"><!-- wrapper de contenu tailwindcss -->
+        <main class="colonneGauche w-2/3 flex flex-col justify-between">
             <section class="flex flex-row justify-between items-center p-2">
                 <div class="presentation flex flex-row items-center">
                     <img class="m-3" src="./img/id.jpg" alt="photo de profil"/>
@@ -99,27 +99,52 @@
                 ?>
             </section>
         </main>
-        <aside class="colonneDroite w-1/3 flex flex-col gap-5">
+        <aside class="colonneDroite w-1/3 flex flex-col justify-between">
             <section class="about">
                 <h2 class="text-3xl font-semibold mb-3">Pourquoi moi ?</h2>
-                <p>Récemment diplômé en développement web, je recherche ma première 
+                <p class="text-justify">Récemment diplômé en développement web, je recherche ma première 
                     opportunité professionnelle dans ce domaine captivant. Mon objectif est
                     d'acquérir de l'expérience tout en prenant des responsabilités pour
                     favoriser mon développement professionnel.
                 </p>
             </section>
             <section class="competences">
-                <div class=""></div>
+                <h2 class="text-3xl font-semibold mb-3">Compétences</h2>
+                <?php foreach ($competences as $competence) {
+                ?>
+                <div class="">
+                    <p class="mb-2 font-semibold"><?= $competence; ?></p>
+                </div>                    
+                <?php }
+                ?>
             </section>
             <section class="softSkills">
-                <div class=""></div>
+                <h2 class="text-3xl font-semibold mb-3">Soft skills</h2>
+                <div class="mb-2 font-semibold">Mes principaux atouts</div>
+                <p>Curiosité - Empathie - Rigueur</p>
             </section>
             <section class="langues">
-                <div class=""></div>
+                <h2 class="text-3xl font-semibold mb-3">Langues</h2>
+                <div class="mb-2 font-semibold">Anglais</div>
             </section>
-            <section class="interets"></section>
-            <section class="recommandations"></section>
-            <section class="contact"></section>
+            <section class="interets">
+                <h2 class="text-3xl font-semibold mb-3">Centres d'intérêt</h2>
+                <div class="mb-2 font-semibold">Adepte de fitness et de guitare</div>
+                <div class="mb-2 font-semibold">Fan des Pink Floyd et de Franck Thilliez</div>
+            </section>
+            <section class="recommandations">
+                <h2 class="text-3xl font-semibold mb-3">Recommandation</h2>
+                <div class="mb-2 font-semibold">David GAILLARD</div>
+                <p>Mentor, OpenClassrooms
+                <br>linkedin.com/in/gaillarddavid/</p>
+            </section>
+            <section class="contact">
+                <h2 class="text-3xl font-semibold mb-3">Contact</h2>
+                <div class="mb-2 font-semibold"><p>davidbeaumont333@gmail.com
+                <br>43 ans - 49300 CHOLET
+                <br>06.79.50.59.23</p>
+                </div>
+            </section>
         </aside>
     </div>
     

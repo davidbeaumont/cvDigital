@@ -67,4 +67,19 @@ $experiences = [
         'periode' => 'De 2002 à 2011 <strong>Camara</strong> SAUMUR',
     ],
 ];
+
+$competences = [
+    'HTML/SCSS',
+    'Tailwind CSS',
+    'JavaScript - JQuery',
+    'WordPress - PHP',
+    'API Rest - Postman',
+    'Visual Studio Code',
+    'Git et GitHub',
+    'optimisation SEO',
+    'Gestion de projet',
+    'Figma',
+    'Photographie',
+    'Photoshop / Lightroom',
+];
 ?>

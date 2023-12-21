@@ -689,6 +689,18 @@ video {
   padding: 1.25rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -709,14 +721,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -784,7 +796,6 @@ section {
   background-image: url("../img/aaabstract.jpg");
   max-width: 1440px;
   height: 1920px;
-  padding: 30px;
   gap: 30px;
 }
 
