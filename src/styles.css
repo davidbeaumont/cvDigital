@@ -1,0 +1,49 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* -------------------------------------------
+Gestion des fonts
+---------------------------------------------*/
+@font-face {
+    font-family: 'urbanist';
+    src: url('fonts/Urbanist-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'visbyCF';
+    src: url('fonts/visbycf-regular.otf') format('truetype');
+    font-display: swap;
+}
+
+/* CSS personnalisé ici */
+
+body {
+    font-family: 'vibyCF', sans-serif;
+}
+h1 {
+    font-family: 'Urbanist', sans-serif;
+}
+i {
+    font-size: 1.7rem;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+.wrapperTailwind {
+    background-image: url("../img/aaabstract.jpg");
+    max-width: 1440px;
+    height: 1920px;
+    padding: 30px;
+    gap: 30px;
+}
+.formation h3::before,
+.projets h3::before,
+.xp h3::before {
+     content: '⚫';
+     font-size: 0.6em;
+     margin-right: 10px;
+}
