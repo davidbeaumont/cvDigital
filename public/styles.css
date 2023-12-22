@@ -597,6 +597,10 @@ video {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -677,6 +681,10 @@ video {
   gap: 1.25rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -695,6 +703,10 @@ video {
 
 .p-9 {
   padding: 2.25rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .text-justify {
@@ -743,12 +755,46 @@ video {
   text-transform: uppercase;
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
 .outline {
   outline-style: solid;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------------------------
@@ -763,19 +809,7 @@ Gestion des fonts
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'visbyCF';
-
-  src: url('fonts/visbycf-regular.otf') format('truetype');
-
-  font-display: swap;
-}
-
 /* CSS personnalisé ici */
-
-body {
-  font-family: 'vibyCF', sans-serif;
-}
 
 h1 {
   font-family: 'Urbanist', sans-serif;
@@ -805,4 +839,18 @@ section {
   content: '⚫';
   font-size: 0.6em;
   margin-right: 10px;
+}
+
+@keyframes scale {
+  0%; 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.hover\:animate-scale:hover {
+  animation: scale 500ms ease-in-out alternate 1;
 }

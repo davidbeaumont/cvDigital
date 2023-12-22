@@ -10,17 +10,10 @@ Gestion des fonts
     src: url('fonts/Urbanist-VariableFont_wght.ttf') format('truetype');
     font-display: swap;
 }
-@font-face {
-    font-family: 'visbyCF';
-    src: url('fonts/visbycf-regular.otf') format('truetype');
-    font-display: swap;
-}
+
 
 /* CSS personnalisé ici */
 
-body {
-    font-family: 'vibyCF', sans-serif;
-}
 h1 {
     font-family: 'Urbanist', sans-serif;
 }

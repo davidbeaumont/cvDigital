@@ -69,17 +69,65 @@ $experiences = [
 ];
 
 $competences = [
-    'HTML/SCSS',
-    'Tailwind CSS',
-    'JavaScript - JQuery',
-    'WordPress - PHP',
-    'API Rest - Postman',
-    'Visual Studio Code',
-    'Git et GitHub',
-    'optimisation SEO',
-    'Gestion de projet',
-    'Figma',
-    'Photographie',
-    'Photoshop / Lightroom',
+    [
+        'text' => 'HTML/SCSS',
+        'link' => 'img/htmlcss.pdf',
+        'level' => 5,
+    ],
+    [
+        'text' => 'Tailwind CSS',
+        'link' => 'img/tailwind.png',
+        'level' => 4,
+    ],
+    [
+        'text' => 'JavaScript - JQuery',
+        'link' => 'img/javascript.pdf',
+        'level' => 3,
+    ],
+    [
+        'text' => 'WordPress - PHP',
+        'link' => 'img/wordpress.pdf',
+        'level' => 4,
+    ],
+    [
+        'text' => 'API Rest - Postman',
+        'link' => 'img/apirest.pdf',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Visual Studio Code',
+        'link' => '#',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Git et GitHub',
+        'link' => 'img/gitgithub.pdf',
+        'level' => 4,
+    ],
+    [
+        'text' => 'optimisation SEO',
+        'link' => 'img/SEO.pdf',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Gestion de projet',
+        'link' => '#',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Figma',
+        'link' => 'img/figma.pdf',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Photographie',
+        'link' => '#',
+        'level' => 4,
+    ],
+    [
+        'text' => 'Photoshop / Lightroom',
+        'link' => '#',
+        'level' => 4,
+    ],
 ];
 ?>
