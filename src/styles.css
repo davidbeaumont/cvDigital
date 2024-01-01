@@ -26,6 +26,9 @@ section {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
+section:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
 .wrapperTailwind {
     background-image: url("../img/aaabstract.jpg");
     max-width: 1440px;
