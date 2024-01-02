@@ -33,7 +33,7 @@
                     </div>    
                 </div>
             </section>
-            <section class="infos grid grid-cols-2 grid-rows-2 hover:animate-loupe">
+            <section class="infos md:grid grid-cols-2 grid-rows-2 hover:animate-loupe">
                 <a href="http://davidbeaumont.site" class="flex flex-row m-2 hover:animate-scale">
                     <i class="fa-solid fa-link mx-3"></i>
                     <p>portfolio <i class="fa-solid fa-arrow-right text-sm"></i> davidbeaumont.site</p>
@@ -118,18 +118,6 @@
                             </a>
                         <?php } else { ?>
                             <p class="mb-2 font-semibold"><?= $competence['text']; ?></p>
-                        <?php } ?>
-
-                        <?php if (isset($competence['level']) && $competence['level'] >= 1 && $competence['level'] <= 5) { ?>
-                            <div class="">
-                                <?php for ($i = 1; $i <= 5; $i++) { ?>
-                                    <?php if ($i <= $competence['level']) { ?>
-                                        <span class="text-yellow-500 text-2xl">★</span>
-                                    <?php } else { ?>
-                                        <span class="text-gray-300 text-2xl">★</span>
-                                    <?php } ?>
-                                <?php } ?>
-                            </div>
                         <?php } ?>
                     </div>
                 <?php } ?>
